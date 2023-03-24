@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <style>
+        /* element selector */
+        form{
+            text-align: center;
+        }
+        /* Id Selector-# */
+        #title
+        {
+            color: red;
+        }
+        /* Class selctor- . */
+        .all
+        {
+            background-color: teal;
+        }
+        /* Universal selector */
+        *
+        {
+            background-color: rgb(253, 253, 253);
+        }
+        /* group selector  */
+        label,input
+        {
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <form class="all" >
+        <h1 id="title">
+                Personal Details
+        </h1>
+        <label>Name :</label>
+        <input type="text" placeholder="only used firstname" />
+        <br>
+        <br>
+        <label>Password :</label>
+        <input type="password" />
+        <br>
+        <br>
+        <label >Email Id :</label>
+        <input placeholder="abcd@gmail.com" type="email" />
+        <br>
+        <br>
+        <label>Gender</label>
+        <input type="radio" name="Gender" checked />Male
+        <input type="radio" name="Gender" />Female
+        <br>
+        <br>
+        <label>Contact#</label>
+        <input type="tel" placeholder="************" />
+        <br>
+        <br>
+        <h1 id="title">
+              Educational Qualifications
+        </h1>
+        <br>
+        <label>Degree</label>
+        <select>
+            <option selected hidden>---Select Group---</option>
+            <option>BSC</option>
+            <option>BCA</option>
+            <option>B.com</option>
+        </select>
+        <br>
+        <br>
+        <label>ENGINEERING</label>
+        <select>
+            <option selected hidden>---Select Group---</option>
+            <option>MCA</option>
+            <option>EEE</option>
+            <option>ECE</option>
+        </select>
+        <br>
+        <br>
+        <label>Hobbies :</label>
+        <input type="checkbox"  value="Playing Chess" checked /> Playing Chess
+        <input type="checkbox" value="Reading Books" /> Reading Books
+        <br>
+        <br>
+        <h1 id="title">
+              Address
+        </h1>
+        <br>
+        <textarea></textarea>
+        <br>
+        <br>
+        <label>Attach Resume :</label>
+        <input type="file" />
+        <br>
+        <br>
+        <button type="submit">
+            SUBMIT
+          </button>
+      
+    </form>
+    
+</body>
+</html>
