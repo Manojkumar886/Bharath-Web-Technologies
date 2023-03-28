@@ -5,6 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        h1{
+            font-family: monospace;
+            font-weight: bolder;
+            font-style: italic;
+            letter-spacing: 2px;
+            font-variant: small-caps;
+            text-decoration: line-through lavenderblush;
+        }
+        .change
+        {
+            text-shadow: 4px 5px 9px red;
+        }
+        input{
+            background-color: chocolate;
+        }
+        #change1
+        {
+            background-color: lightblue;
+        }
+    </style>
 </head>
 <body bgcolor="yellowgreen" border="2">
     
@@ -14,12 +35,12 @@
                 Personal Details
             </font>
         </h1>
-        <label>Name :</label>
+        <label class="change">Name :</label>
         <input type="text" placeholder="only used firstname" />
         <br>
         <br>
         <label>Password :</label>
-        <input type="password" />
+        <input type="password" id="change1" />
         <br>
         <br>
         <label >Email Id :</label>
@@ -77,7 +98,7 @@
         <input type="file" />
         <br>
         <br>
-        <button type="submit"><font color="orange">
+        <button type="submit"><font color="orange" style="cursor: crosshair;">
             SUBMIT
           </font></button>
       
