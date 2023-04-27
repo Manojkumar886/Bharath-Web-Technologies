@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script</title>
+    <script>
+       function active()
+       {
+        let process=document.getElementsByTagName('li')[3];
+
+        process.style.borderStyle='double';
+       }
+      function active1()
+       {
+        let implement=document.getElementById('idone')
+
+        implement.style.color='yellow';
+       }
+    </script>
+</head>
+<body>
+
+    <div>
+        <button onclick="document.getElementById('onoff').src='./light on.gif'" >Lighton</button>
+        <img src="./light on.gif" width="90px" height="90px" id="onoff"/>
+        <button onclick="document.getElementById('onoff').src='./light off.gif'">Lightoff</button>
+    </div>
+    <ul >
+        Favoriate Fruits Names
+        <li id="idone" ondblclick="active1()">
+            Mango
+        </li>
+        <li >
+            Banana
+        </li>
+        <li>
+            WaterMelon
+        </li>
+        <li onclick="active()">
+            Apple
+        </li>
+        <li>
+            Orange
+        </li>
+    </ul>
+    <p style="text-transform: capitalize;" onclick="alert('The alert() method displays an alert box with a message and an OK button. The alert() method is used when you want information to come through to the user.')">Alert keyword</p>
+    <p ondblclick="document.writeln('The write() method deletes all existing HTML when used on a loaded document. The write() method cannot be used in XHTML or XML. Note.')">Document.writeln</p>
+    <p onmouseenter="console.log('Definition and Usage. The log() method writes (logs) a message to the console. The log() method is useful for testing purposes.')">Console Log</p>
+</body>
+</html>
