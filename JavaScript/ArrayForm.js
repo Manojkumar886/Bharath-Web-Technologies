@@ -1,0 +1,52 @@
+let studentvalues=["thivin","Manoj","Mohan","Ganesh","Pradeep","Mathan"];
+
+var inserting=()=>
+{
+    let temp=document.getElementById('users').value
+    studentvalues.push(temp);
+    alert("your value is added successfully"+temp)
+}
+
+let viewpoint=()=>
+{
+    let hi="";
+    studentvalues.map((data)=>
+    {
+        hi+="<tr><td>"+data+"</td></tr>"
+    })
+    const performance=document.getElementById('live');
+    performance.innerHTML="<table align='center' style='padding: 10px 10px 5px 10px; box-shadow:5px 6px 4px pink;'><thead><tr><th> Student Names</th></tr></thead><tbody>"+hi+"</tbody></table>"
+}
+
+let updating=()=>
+{
+    let index=document.getElementById('users').value
+    const newone=prompt("Tell us what value you want update/replace"+studentvalues[index])
+    studentvalues[index]=newone;
+    viewpoint();
+}
+
+var deleting=()=>
+{
+    let temp=document.getElementById('users').value
+    studentvalues=studentvalues.filter((data)=>
+    {
+        return data!==temp;
+    })
+    alert('your value is deleted'+temp)
+    viewpoint();
+}
+
+var searching=()=>
+{
+    let temp=document.getElementById('users').value;
+    for(let index=0;index<studentvalues.length;index++)
+    {     
+        if(studentvalues[index]===temp)
+        {
+            return index;
+        }
+    }
+    
+   
+}
